@@ -10,9 +10,7 @@
 <script lang="ts" setup>
 import {Card} from '@/components/ui/card'; 
 
-defineProps<{
-  class?: string;
-}>();
+
 
 const props = defineProps({
   class: String,

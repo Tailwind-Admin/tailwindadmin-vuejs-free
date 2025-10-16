@@ -24,10 +24,6 @@ const MainRoutes = [
                 path: '/apps/tickets',
                 component: () => import('../views/apps/tickets/Tickets.vue')
             },
-
-
-
-
             {
                 name: 'Blog Posts',
                 path: '/apps/blog/post',
@@ -43,12 +39,20 @@ const MainRoutes = [
                 path: '/icons/solar',
                 component: () => import('../views/icons/Solar.vue')
             },
-
-
-
-
-
-
+            {
+                name: 'Table',
+                path: '/utilities/table',
+                component: () => import('../views/utilities/Table.vue')
+            }, {
+                name: 'Form',
+                path: '/utilities/form',
+                component: () => import('../views/utilities/Form.vue')
+            },
+            {
+                name: 'User Profile',
+                path: '/user-profile',
+                component: () => import('../views/utilities/UserProfile.vue')
+            },
         ],
     },
 ];

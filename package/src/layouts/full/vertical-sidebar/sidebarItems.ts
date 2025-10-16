@@ -96,7 +96,48 @@ const sidebarItem: menu[] = [
   //   icon: "home-smile-linear",
   //   to: "/starter",
   // },
+  { header: "Ai" },
+  {
+    title: 'Ai Table Builder',
+    icon: 'server-linear',
+    to: 'https://tailwindbuilder.ai/table-builder',
+    isPro: false,
 
+  }, {
+    title: 'Ai Form Builder',
+    icon: 'document-add-linear',
+    to: 'https://tailwindbuilder.ai/form-builder',
+    isPro: false,
+
+  }, {
+    title: 'Ai Chart Builder',
+    icon: 'pie-chart-2-linear',
+    to: 'https://tailwindbuilder.ai/chart-builder',
+    isPro: false,
+
+  },
+
+  { header: "PAGES" },
+  {
+    title: 'Table',
+    icon: 'server-linear',
+    to: '/utilities/table',
+    isPro: false,
+
+  },
+  {
+    title: 'Form',
+    icon: 'document-add-linear',
+    to: '/utilities/form',
+    isPro: false,
+
+  }, {
+    title: 'User Profile',
+    icon: 'user-circle-linear',
+    to: '/user-profile',
+    isPro: false,
+
+  },
   { header: "Apps" },
 
   {

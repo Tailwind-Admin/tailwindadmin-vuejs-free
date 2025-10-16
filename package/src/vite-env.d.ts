@@ -18,26 +18,3 @@ declare module "*.vue" {
 
 
 
-declare module 'aos' {
-  interface AosOptions {
-    offset?: number;
-    delay?: number;
-    duration?: number;
-    easing?: string;
-    once?: boolean;
-    mirror?: boolean;
-    anchorPlacement?: string;
-    startEvent?: string;
-    disable?: boolean | 'mobile' | 'phone' | 'tablet';
-    [key: string]: any;
-  }
-
-  const AOS: {
-    init(options?: AosOptions): void;
-    refresh(): void;
-    refreshHard(): void;
-    destroy(): void;
-  };
-
-  export default AOS;
-}
