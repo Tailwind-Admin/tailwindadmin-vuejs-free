@@ -108,7 +108,5 @@ onMounted(() => {
               </div>
       </simplebar>
     </SidebarContent>
-
-   
   </Sidebar>
 </template>

@@ -5,7 +5,7 @@ import DarkLogo from '../../../assets/images/logos/dark-logo.svg';
 <template>
     <div class="logo lh-normal">
         <RouterLink to="/">
-            <img :src="DarkLogo" alt="home"  class="rtl:[transform:scaleX(-1)]" />
+            <img :src="DarkLogo" alt="home" />
         </RouterLink>
     </div>
 </template>

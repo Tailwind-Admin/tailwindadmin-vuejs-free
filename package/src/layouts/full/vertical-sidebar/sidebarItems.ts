@@ -400,7 +400,7 @@ const sidebarItem: menu[] = [
         isPro: true,
       },
       {
-        title: 'Candlestick Chart',
+        title: 'Candlestick',
         to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/candlestick',
         isPro: true,
       }, {
@@ -414,7 +414,7 @@ const sidebarItem: menu[] = [
         isPro: true,
       },
       {
-        title: 'Radialbar & Radar',
+        title: 'Radial & Radar',
         to: 'https://tailwindadmin-vuejs-main.netlify.app/charts/apex-charts/radialbar',
         isPro: true,
       },

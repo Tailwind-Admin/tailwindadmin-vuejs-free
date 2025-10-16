@@ -88,7 +88,7 @@ const isActive = computed(() => {
 
     <div class="flex flex-col min-w-0">
 
-      <span class="text-sm leading-5 truncate">{{ $t(item.title) }}</span>
+      <span class="text-sm leading-5 truncate">{{ item.title }}</span>
 
       <span
 
@@ -98,7 +98,7 @@ const isActive = computed(() => {
 
       >
 
-        {{ $t(item.subCaption) }}
+        {{ item.subCaption }}
 
       </span>
 

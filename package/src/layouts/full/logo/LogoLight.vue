@@ -5,7 +5,7 @@ import LightLogo from '../../../assets/images/logos/light-logo.svg';
 <template>
     <div class="logo lh-normal">
         <RouterLink to="/">
-            <img :src="LightLogo" alt="home" class="rtl:[transform:scaleX(-1)] " />
+            <img :src="LightLogo" alt="home" />
         </RouterLink>
     </div>
 </template>

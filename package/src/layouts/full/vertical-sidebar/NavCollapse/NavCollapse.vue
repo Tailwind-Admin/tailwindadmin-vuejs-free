@@ -56,7 +56,7 @@ function handleClick(e: MouseEvent, linkItem: any) {
           :class="isActiveGroup ? 'bg-primary text-white' : 'text-link dark:text-darklink'">
           <div class="flex gap-3 items-center">
             <Icon :icon="'solar:' + item.icon" class="w-5 h-5" />
-            <span class=" navtitle whitespace-nowrap leading-5 ">{{ $t(item.title) }}</span>
+            <span class=" navtitle whitespace-nowrap leading-5 ">{{ item.title }}</span>
           </div>
 
 
@@ -75,7 +75,7 @@ function handleClick(e: MouseEvent, linkItem: any) {
                 'text-link dark:text-darklink': route.path !== child.to
               }">
                 <span class="  size-2 rounded-full  bg-transparent border border-dark dark:border-darklink dot"></span>
-                {{ $t(child.title) }}
+                {{ child.title }}
 
                 <span v-if="child.isPro"
                 class="ml-auto py-1 px-2.5 text-[10px] bg-lightsecondary text-secondary rounded-full leading-none">

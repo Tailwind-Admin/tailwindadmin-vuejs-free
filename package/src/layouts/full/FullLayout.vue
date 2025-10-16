@@ -27,8 +27,7 @@ import LayoutVerticalHeader from "./vertical-header/VerticalHeader.vue";
 
       <!-- Main content wrapper -->
       <div class=" w-full  bg-white dark:bg-dark">
-        <LayoutVerticalHeader 
-         />
+        <LayoutVerticalHeader />
         <!-- Page content -->
         <main class="flex-grow">
           <div class="
@@ -42,5 +41,3 @@ import LayoutVerticalHeader from "./vertical-header/VerticalHeader.vue";
   </SidebarProvider>
 
 </template>
-
-

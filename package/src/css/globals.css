@@ -4,23 +4,17 @@
 @import './app.css';
 @import "./layouts/container.css";
 @import "./layouts/sidebar.css";
-@import "./layouts/horizontal.css";
-@import "./layouts/header.css";
+
+/* @import "./layouts/header.css"; */
 @import "./pages/dashboards.css";
-@import "./pages/widgets.css";
 
-@import "./pages/landingpage.css";
-@import "./pages/landingpage.css";
-@import "./pages/frontend-pages.css";
-
-@import "./pages/auth.css";
 @import "./pages/app.css";
 
 @import "./theme/default-colors.css";
 @import "./theme/dark.css";
 
 @import "./override/reboot.css";
-@import "./layouts/rtl.css";
+
 @import "tw-animate-css";
 
 @import 'swiper/css';
@@ -159,22 +153,6 @@ body {
   }
 }
 
-@utility container-md {
-  @apply max-w-[1218px] mx-auto;
-}
-
-@utility landingpage {
-  & .container {
-    @apply max-w-[1320px];
-  }
-}
-
-@utility frontend-page {
-  & .container {
-    @apply max-w-[1410px];
-  }
-}
-
 @utility dropdown {
   @apply shadow-md bg-white dark:bg-dark relative rounded-sm dark:shadow-dark-md;
 }
@@ -197,14 +175,8 @@ body {
   }
 }
 
-@utility border-less-input {
-  & input {
-    @apply border-none border-border rounded-md border-r-0 px-2.5 h-full rounded-r-none dark:border-darkborder bg-transparent dark:bg-transparent w-full text-sm;
-  }
-  & input:focus {
-    @apply text-sm border-none ring-offset-0 dark:ring-transparent ring-transparent shadow-none;
-  }
-}
+
+
 
 @utility button-group {
   & span {
@@ -249,43 +221,8 @@ body {
     @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 ring-transparent;
   }
 }
-@utility form-control-group-left {
-  /* Input group */
-  & input {
-    @apply border rounded-r-md border-border dark:border-darkborder bg-transparent ring-transparent dark:ring-transparent dark:bg-transparent w-full text-sm;
-  }
-  & input:focus {
-    @apply shadow-none dark:shadow-none ring-transparent dark:ring-transparent;
-  }
-}
 
-@utility form-control-chat {
-  & input {
-    @apply rounded-md border-0 bg-transparent dark:bg-transparent w-full text-sm;
-  }
 
-  & input:focus {
-    @apply border-0! bg-transparent dark:bg-transparent w-full text-sm ring-transparent dark:ring-transparent;
-  }
-}
-
-@utility form-control-rounded {
-  & input {
-    @apply rounded-full border border-border dark:border-darkborder bg-transparent dark:bg-transparent w-full text-sm;
-  }
-
-  & input:focus {
-    @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 ring-transparent;
-  }
-}
-
-@utility form-control-textarea {
-  @apply rounded-md border border-border dark:border-darkborder bg-transparent dark:bg-transparent w-full text-sm p-4;
-
-  &:focus {
-    @apply border-primary dark:border-primary outline-hidden shadow-none ring-offset-0 ring-transparent;
-  }
-}
 
 @utility form-control-input {
   @apply rounded-md border border-border dark:border-darkborder bg-transparent dark:bg-transparent w-full text-sm;
@@ -295,11 +232,7 @@ body {
   }
 }
 
-@utility input-center {
-  & input {
-    @apply text-center;
-  }
-}
+
 
 @utility checkbox {
   @apply !h-[20px] !w-[20px] !border !border-border dark:!border-darkborder !bg-transparent focus:!ring-0 focus:!ring-offset-0 checked:!bg-primary dark:checked:!bg-primary rounded cursor-pointer !shrink-0;
@@ -350,36 +283,8 @@ body {
     @apply !rounded-[12px];
   }
 
-  /* Welcome Msg */
-  @layer utilities {
-    .welcome-toast [data-sonner-toast][data-styled="true"] {
-      @apply !bg-primary text-white !rounded-md !gap-3 !border-0;
-    }
 
-    .welcome-toast [data-sonner-toast][data-styled="true"] [data-title] {
-      @apply !text-white text-base !font-sans;
-    }
 
-    .welcome-toast [data-sonner-toast][data-styled="true"] [data-description] {
-      @apply !text-white opacity-80 text-sm !font-sans;
-    }
-
-    .welcome-toast [data-sonner-toast][data-styled="true"] [data-button] {
-      @apply !bg-secondary !text-white !font-sans;
-    }
-  }
-
-@layer utilities{ 
-  .btn-circle {
-  @apply !h-8 !w-8 !rounded-md !flex justify-center items-center p-0 text-ld !shrink-0;
-}
-}
-
-@layer utilities {
-   .btn-circle-hover {
-  @apply h-9 w-9 flex justify-center items-center rounded-md hover:bg-lightprimary hover:text-primary cursor-pointer bg-transparent;
-}
-}
 
   /*heading text color*/
   h1,
